@@ -23,7 +23,7 @@ brew install git
 brew install grep
 
 # Editors
-brew install vim
+brew install vim --with-override-system-vi
 brew cask install atom
 
 # Programming Languages
