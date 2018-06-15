@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Show hidden files (dotfiles) in "Finder" app
+defaults write com.apple.finder AppleShowAllFiles TRUE
+
+# Kill affected applications
+for app in "Finder"; do
+	killall "${app}" &> /dev/null
+done
+
+echo "Done! Some of these changes may take a restart to take effect"
