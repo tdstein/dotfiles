@@ -1,0 +1,3 @@
+# A collection of export variables
+
+export ZSH="$HOME/Projects/.dotfiles/zsh"
