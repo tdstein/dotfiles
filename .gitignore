@@ -1,15 +1,4 @@
 zsh
 
-.atom/.apm
-.atom/.node-gyp
-.atom/.storage
-.atom/blob-store
-.atom/compile-cache/
-.atom/packages
-.atom/storage
-.atom/themes
-.atom/blob-store
-.atom/recovery
-
 .bash_history
 .zsh_history
