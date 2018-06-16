@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+################################################################################
+# Exports - Global Environment Variables                                       #
+################################################################################
+
 export ZSH="$HOME/Projects/dotfiles/zsh"
 
 # Enables 256 color in terminal

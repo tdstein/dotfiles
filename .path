@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+################################################################################
+# Path - Path Configuration                                                    #
+################################################################################
+
 # coreutils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"

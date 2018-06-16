@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+################################################################################
+# macOS - Custom macOS Configuration																					 #
+################################################################################
+
 # Close any 'System Preferences' panes to prevent them from overriding this
 osascript -e 'tell application "System Preferences" to quit'
 
