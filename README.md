@@ -2,4 +2,4 @@
 
 My personal dotfiles.
 
-I'm just trying to keep things organized...
+I'm just trying to keep things organized.
