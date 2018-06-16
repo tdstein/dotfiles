@@ -1,9 +1,25 @@
 #!/usr/bin/env bash
 
+# Close any 'System Preferences' panes to prevent them from overriding this
+osascript -e 'tell application "System Preferences" to quit'
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+###############################################################################
+# Finder                                                                      #
+###############################################################################
+
 # Show hidden files (dotfiles) in "Finder" app
 defaults write com.apple.finder AppleShowAllFiles TRUE
 
-# Kill affected applications
+###############################################################################
+# Kill 											                                                  #
+###############################################################################
+
 for app in "Finder"; do
 	killall "${app}" &> /dev/null
 done

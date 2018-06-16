@@ -1,4 +1,5 @@
-zsh
+zsh/
+.idea/
 
 .bash_history
 .zsh_history
