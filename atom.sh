@@ -11,3 +11,4 @@ apm install -c -s ide-yaml
 apm install -c -s ide-html
 apm install -c -s ide-scala
 apm install -c -s ide-python
+apm install -c -s language-markdown
