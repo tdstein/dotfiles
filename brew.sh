@@ -25,6 +25,7 @@ brew install grep
 # Editors
 brew install vim --with-override-system-vi
 brew cask install atom
+brew cask install intellij-idea-ce
 
 # Programming Languages
 brew cask install java8
