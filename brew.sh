@@ -21,6 +21,7 @@ brew install findutils
 # More Tooling
 brew install git
 brew install grep
+brew install tmux
 
 # Editors
 brew install vim --with-override-system-vi
