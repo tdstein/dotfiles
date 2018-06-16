@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 # Themes
-apm install rainglow
+apm install -c rainglow
 
 # Language Support
-apm install atom-ide-ui
-apm install ide-bash
-apm install ide-json
-apm install ide-yaml
-apm install ide-html
-apm install ide-scala
-apm install ide-python
+apm install -c -s atom-ide-ui
+apm install -c -s ide-bash
+apm install -c -s ide-json
+apm install -c -s ide-yaml
+apm install -c -s ide-html
+apm install -c -s ide-scala
+apm install -c -s ide-python
