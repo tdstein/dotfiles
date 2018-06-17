@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ################################################################################
-# atom.sh - Atom Editor Package Installation Script
+# atom.sh - Atom Editor Package Installation Script                            #
 ################################################################################
 
 packages=(

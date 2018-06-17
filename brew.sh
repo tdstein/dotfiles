@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-# Install command-line tools using Homebrew
+################################################################################
+# brew.sh - Homebrew Management Script                              #
+################################################################################
 
 # Fetch the newest version
 brew update
@@ -11,33 +13,62 @@ brew upgrade
 # Tap all versions
 brew tap caskroom/versions
 
-brew install bash
 
-# GNU Tooling
-brew install coreutils
-brew install moreutils
-brew install findutils
+################################################################################
+# Cellar Packages                                                              #
+################################################################################
 
-# More Tooling
-brew install git
-brew install grep
-brew install tmux
+packages=(
 
-# Editors
-brew install vim --with-override-system-vi
-brew cask install atom
-brew cask install intellij-idea-ce
+  bash
 
-# Programming Languages
-brew cask install java8
-brew install python
-brew install scala
-brew install npm
+  # GNU Tooling
+  coreutils
+  moreutils
+  findutils
 
-# Build tools
-brew install maven
-brew install gradle
-brew install sbt
+  # Tooling
+  git
+  grep
+  tmux
+
+  # Programming Languages
+  python
+  scala
+  node
+
+  # Build tools
+  maven
+  gradle
+  sbt
+)
+
+for package in ${packages[*]}; do
+  if [[ ! -d "/usr/local/Cellar/$package" ]]; then
+      brew install $package
+  fi
+done
+
+################################################################################
+# Cask Packages                                                                #
+################################################################################
+
+casks=(
+
+  # Editors
+  atom
+  intellij-idea-ce
+
+  # Programming Languages
+  java8
+)
+
+for package in ${casks[*]}; do
+  if [[ ! -d "/usr/local/Caskroom/$package" ]]; then
+      brew cask install $package
+  fi
+done
+
 
 # Cleanup at the very end
 brew cleanup
