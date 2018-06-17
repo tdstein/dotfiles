@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+################################################################################
+# atom.sh - Atom Editor Package Installation Script
+################################################################################
+
 packages=(
 
   # Themes
@@ -21,8 +25,9 @@ packages=(
 
 )
 
+# Install packages which don't already exist
 for package in ${packages[*]}; do
-  if [[ ! -d "$HOME/.atom/packages/$package" ]]
+  if [[ ! -d ".atom/packages/$package" ]]
   then
       apm install -c -s $package
   fi
