@@ -1,6 +1,4 @@
-zsh/
 .idea/
-.secrets
 
-.bash_history
-.zsh_history
+zsh/
+.secrets
