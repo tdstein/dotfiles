@@ -1,18 +1,29 @@
 #!/usr/bin/env bash
 
-# Themes
-apm install -c rainglow
+packages=(
 
-# Language Support
-apm install -c -s atom-ide-ui
-apm install -c -s ide-bash
-apm install -c -s ide-json
-apm install -c -s ide-yaml
-apm install -c -s ide-html
-apm install -c -s ide-scala
-apm install -c -s ide-python
-apm install -c -s language-markdown
-apm install -c -s language-ini
+  # Themes
+  rainglow
 
-# Tools
-apm install -c -s sort-lines
+  # Languages
+  atom-ide-ui
+  ide-bash
+  ide-json
+  ide-yaml
+  ide-html
+  ide-scala
+  ide-python
+  language-markdown
+  language-ini
+
+  # Tools
+  sort-lines
+
+)
+
+for package in ${packages[*]}; do
+  if [[ ! -d "$HOME/.atom/packages/$package" ]]
+  then
+      apm install -c -s $package
+  fi
+done
