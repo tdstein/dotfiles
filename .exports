@@ -5,6 +5,7 @@
 ################################################################################
 
 export ZSH="$HOME/Projects/dotfiles/zsh"
+export PYTHON_HOME="$HOME/Library/Python/3.6/lib/python/site-packages"
 
 # Enables 256 color in terminal
 export TERM="xterm-256color"

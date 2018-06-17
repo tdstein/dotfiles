@@ -2,6 +2,9 @@
   autosave:
     enabled: true
   core:
+    disabledPackages: [
+      "language-gfm"
+    ]
     telemetryConsent: "no"
   editor: {}
   "exception-reporting":
