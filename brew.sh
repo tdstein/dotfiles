@@ -45,7 +45,7 @@ packages=(
 
 for package in ${packages[*]}; do
   if [[ ! -d "/usr/local/Cellar/$package" ]]; then
-      brew install $package
+      brew install ${package}
   fi
 done
 
@@ -65,7 +65,7 @@ casks=(
 
 for package in ${casks[*]}; do
   if [[ ! -d "/usr/local/Caskroom/$package" ]]; then
-      brew cask install $package
+      brew cask install ${package}
   fi
 done
 

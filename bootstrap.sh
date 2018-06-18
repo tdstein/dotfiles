@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Install homebrew if not installed
 if ! [ -x "$(command -v brew)" ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 fi

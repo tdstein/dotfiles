@@ -29,6 +29,6 @@ packages=(
 for package in ${packages[*]}; do
   if [[ ! -d ".atom/packages/$package" ]]
   then
-      apm install -c -s $package
+      apm install -c -s ${package}
   fi
 done
