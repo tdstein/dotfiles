@@ -18,3 +18,6 @@ export MANPATH="/usr/local/opt/grep/libexec/gnuman:$MANPATH"
 
 # Python 3.6 binaries
 export PATH="$HOME/Library/Python/3.6/bin:$PATH"
+
+# Okta
+export PATH="$HOME/Projects/dotfiles/okta/bin/:$PATH"
