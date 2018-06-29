@@ -2,3 +2,6 @@
 name = Taylor Steinberg
 email = taylor.steinberg@lifeomic.com
 username = tdstein
+
+[core]
+autocrlf = true
