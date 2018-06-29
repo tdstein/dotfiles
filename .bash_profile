@@ -4,7 +4,7 @@
 # Bash Profile																																 #
 ################################################################################
 
-dotfiles=(~/.exports ~/.path ~/.secrets)
+dotfiles=(~/.aliases ~/.exports ~/.path ~/.secrets)
 
 # Load dotfiles
 for file in ${dotfiles[*]}; do

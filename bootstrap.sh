@@ -5,6 +5,7 @@ if ! [ -x "$(command -v brew)" ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 fi
 
+ln -s $HOME/Projects/dotfiles/.aliases      $HOME/.aliases
 ln -s $HOME/Projects/dotfiles/.bash_profile $HOME/.bash_profile
 ln -s $HOME/Projects/dotfiles/.exports      $HOME/.exports
 ln -s $HOME/Projects/dotfiles/.gitconfig    $HOME/.gitconfig

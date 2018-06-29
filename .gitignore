@@ -1,4 +1,9 @@
 .idea/
 
 zsh/
+
 .secrets
+.npmrc
+node_modules/
+.buildNodeID
+.gitignore
