@@ -21,4 +21,7 @@ export PATH="$HOME/Library/Python/3.6/bin:$PATH"
 export PATH="$HOME/Library/Python/2.7/bin:$PATH"
 
 # Okta
-export PATH="$HOME/Projects/dotfiles/okta/bin/:$PATH"
+export PATH="$HOME/Projects/dotfiles/okta/bin:$PATH"
+
+# AWS
+export PATH="$HOME/Projects/dotfiles/.aws/bin:$PATH"
