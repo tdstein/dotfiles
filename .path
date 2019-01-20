@@ -20,8 +20,14 @@ export MANPATH="/usr/local/opt/grep/libexec/gnuman:$MANPATH"
 export PATH="$HOME/Library/Python/3.6/bin:$PATH"
 export PATH="$HOME/Library/Python/2.7/bin:$PATH"
 
+# Rbenv
+export PATH=~/.rbenv/shims:$PATH
+
 # Okta
 export PATH="$HOME/Projects/dotfiles/okta/bin:$PATH"
 
 # AWS
 export PATH="$HOME/Projects/dotfiles/.aws/bin:$PATH"
+
+# SQLite
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
