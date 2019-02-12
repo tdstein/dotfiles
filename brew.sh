@@ -60,7 +60,7 @@ casks=(
   intellij-idea-ce
 
   # Programming Languages
-  java8
+  corretto
 )
 
 for package in ${casks[*]}; do
