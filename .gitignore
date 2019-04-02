@@ -2,6 +2,7 @@
 
 zsh/
 
+.lifeomic
 .secrets
 .npmrc
 node_modules/

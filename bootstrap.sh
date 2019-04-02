@@ -7,6 +7,7 @@ fi
 
 ln -s $HOME/Projects/dotfiles/.aliases      $HOME/.aliases
 ln -s $HOME/Projects/dotfiles/.bash_profile $HOME/.bash_profile
+ln -s $HOME/Projects/dotfiles/.lifeomic     $HOME/.lifeomic
 ln -s $HOME/Projects/dotfiles/.exports      $HOME/.exports
 ln -s $HOME/Projects/dotfiles/.gitconfig    $HOME/.gitconfig
 ln -s $HOME/Projects/dotfiles/.path         $HOME/.path
