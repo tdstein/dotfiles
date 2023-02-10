@@ -1,5 +1,5 @@
 .idea
 .emacs.d
 
-Brewfile.lock.json
+homebrew/Brewfile.lock.json
 
