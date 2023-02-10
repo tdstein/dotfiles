@@ -1,6 +1,7 @@
 #!/bin/sh
 
-git clone https://github.com/tdstein/dotfiles.git "$HOME"/.dotfiles
+set -e
 
-cd "$HOME"/.dotfiles/ || exit
-make
+git clone https://github.com/tdstein/dotfiles.git "$HOME"/.dotfiles && cd "$HOME"/.dotfiles/
+
+. bootstrap.sh

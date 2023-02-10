@@ -6,5 +6,5 @@
 **Warning: This may have unintended consequences. Use at your own risk!**
 
 ```bash 
-$ make
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/tdstein/dotfiles/HEAD/install.sh)"
 ```
