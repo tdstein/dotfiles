@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/zsh
 
 ################################################################################
 # macOS - Custom macOS Configuration																					 #
@@ -22,7 +22,7 @@ defaults write com.apple.finder AppleShowAllFiles TRUE
 ###############################################################################
 
 git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
+cd fonts || exit
 ./install.sh
 cd ..
 rm -rf fonts
@@ -32,8 +32,6 @@ rm -rf fonts
 # Kill 											                                                  #
 ###############################################################################
 
-for app in "Finder"; do
-	killall "${app}" &> /dev/null
-done
+killall Finder
 
 echo "Done! Some of these changes may take a restart to take effect"
