@@ -2,6 +2,6 @@
 
 set -e
 
-git clone https://github.com/tdstein/dotfiles.git "$HOME"/.dotfiles && cd "$HOME"/.dotfiles/
+git clone git@github.com:tdstein/dotfiles.git "$HOME"/.dotfiles && cd "$HOME"/.dotfiles/
 
 . bootstrap.sh
