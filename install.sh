@@ -2,6 +2,9 @@
 
 set -e
 
-git clone git@github.com:tdstein/dotfiles.git "$HOME"/.dotfiles && cd "$HOME"/.dotfiles/
+if ! [ -d "$HOME"/.dotfiles/ ]; then
+	git clone git@github.com:tdstein/dotfiles.git "$HOME"/.dotfiles
+fi
+cd "$HOME"/.dotfiles/
 
 . bootstrap.sh
