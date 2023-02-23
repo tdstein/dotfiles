@@ -7,7 +7,7 @@ if ! [ -d "$HOME"/.dotfiles/ ]; then
 fi
 cd "$HOME"/.dotfiles/ || exit
 
-set -- macos zsh homebrew emacs
+set -- macos zsh homebrew git emacs
 for package in "$@"; do
   if [ -d "${package}" ]; then
       (cd ./"${package}" || exit; . install.sh)
