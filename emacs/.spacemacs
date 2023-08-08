@@ -63,7 +63,13 @@ This function should only modify configuration layer settings."
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
-     spell-checking
+     (shell-scripts :variables
+                    shell-scripts-backend 'lsp
+                    shell-scripts-format-on-save t)
+     (spell-checking :variables
+                     enable-flyspell-auto-completion t
+                     spell-checking-enable-auto-dictionary t
+                     spell-checking-enable-by-default t)
      syntax-checking
      ;; version-control
      treemacs
